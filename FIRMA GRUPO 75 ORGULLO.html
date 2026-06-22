@@ -183,7 +183,17 @@
           min-height: calc(100vh - 80px);
           min-height: calc(100dvh - 80px);
         }
+
+        .iframe-wrapper {
+          height: 60vh; /* Altura controlada */
+          overflow: hidden; /* Esto oculta la parte superior que quieres saltar */
+        }
+        .form-frame {
+          height: 200%; /* Hacemos el iframe más grande para poder desplazarlo */
+          margin-top: -380px; /* <--- CAMBIA ESTE VALOR para subir/bajar el inicio */
+        }
       }
+
       @keyframes bounce {
         0%,
         20%,
